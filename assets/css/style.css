@@ -147,3 +147,63 @@ html, body {
 }
 
 
+#topContainer {
+	min-height: 100%;
+	width: 100%;
+}
+
+#navBarContainer {
+	background-color: #000;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navBar {
+	display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.logo {
+	margin-bottom: 9px;
+}
+
+.logo img {
+	width: 35px;    
+}
+
+.group {
+	border-top: 1px solid #a0a0a0;
+    padding: 10px 0;
+}
+
+.navItem {
+	padding: 9px 0;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.navLink {
+	text-decoration: none;
+    color: #a0a0a0;
+}
+
+.navLink:hover {
+	color: #fff;
+}
+
+.searchIcon {
+	position: absolute;
+	width: 25px;
+	right: 0;
+	top: 5px;
+}
+
+
