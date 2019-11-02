@@ -47,27 +47,27 @@ else {
 
 					<div class="buttons">
 
-						<button class="controlButton shuffle">
+						<button class="controlButton shuffle" alt="shuffle button" title="Shuffle button">
 							<img src="assets/images/icons/shuffle.png">
 						</button>
 
-						<button class="controlButton previous">
+						<button class="controlButton previous" alt="previous button" title="Previous button">
 							<img src="assets/images/icons/previous.png">
 						</button>
 
-						<button class="controlButton play">
+						<button class="controlButton play" alt="play button" title="Play button"> 
 							<img src="assets/images/icons/play.png">
 						</button>
 
-						<button class="controlButton pause" style="display: none;">
+						<button class="controlButton pause" style="display: none;" alt="pause button" title="Pause button">
 							<img src="assets/images/icons/pause.png">
 						</button>
 
-						<button class="controlButton next">
+						<button class="controlButton next" alt="next button" title="Next button">
 							<img src="assets/images/icons/next.png">
 						</button>
 
-						<button class="controlButton repeat">
+						<button class="controlButton repeat" alt="repeat button" title="Repeat button">
 							<img src="assets/images/icons/repeat.png">
 						</button>
 
@@ -89,7 +89,21 @@ else {
 
 			</div>
 			<div id="nowPlayingRight">
-				
+
+				<div class="volumeBar">
+
+					<button class="controlButton volume" title="Volume button" alt="volume button">
+						<img src="assets/images/icons/volume.png">
+					</button>
+
+					<div class="progressBar">
+							<div class="progressBarBg">
+								<div class="progress"></div>
+							</div>
+						</div>
+
+				</div>
+
 			</div>
 
 		</div>

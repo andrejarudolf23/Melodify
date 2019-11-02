@@ -131,4 +131,19 @@ html, body {
     color: #a0a0a0;
 }
 
+.volumeBar {
+	width: 180px;
+    position: absolute;
+    right: 0;
+}
+
+.volumeBar .progressBar {
+	width: 125px;
+}
+
+#nowPlayingRight {
+	position: relative;
+    margin-top: 17px;
+}
+
 
