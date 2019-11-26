@@ -1,14 +1,27 @@
+/* Reset */
 html, body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
 }
 
+/* Main Styling */
 * {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
 }
 
+body {
+	background-color: #181818;
+   font-size: 14px;
+   min-width: 720px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Now Playing Bar */
 #nowPlayingBarContainer {
 	width: 100%;
     background-color: #282828;
@@ -112,10 +125,10 @@ html, body {
 
 #nowPlayingLeft .albumArtwork {
 	height: 100%;
-    max-width: 57px;
-    margin-right: 15px;
-    float: left;
-    background-size: cover;
+	max-width: 57px;
+	margin-right: 15px;
+	float: left;
+	background-size: cover;
 }
 
 .trackDetails {
@@ -152,6 +165,7 @@ html, body {
 	width: 100%;
 }
 
+/* Navbar  */
 #navBarContainer {
 	background-color: #000;
     width: 220px;
@@ -181,8 +195,8 @@ html, body {
 }
 
 .navItem {
-	padding: 9px 0;
-    font-size: 15px;
+	padding: 10px 0;
+    font-size: 14px;
     font-weight: 700;
     display: block;
     letter-spacing: 1px;
@@ -206,4 +220,149 @@ html, body {
 	top: 5px;
 }
 
+/* Main View Container */
+#mainViewContainer {
+	margin-left: 220px;
+	padding-bottom: 90px;
+	width: calc(100% - 220px);
+}
+
+#mainContent {
+	padding: 0 20px;
+}
+
+.pageHeadingBig {
+	text-align: center;
+	margin-top: 0;
+	padding: 20px;
+}
+
+.gridViewItem {
+	display: inline-block;
+	margin-right: 20px;
+	width: 29%;
+	max-width: 200px;
+	min-width: 150px;
+	margin-bottom: 20px;
+}
+
+.gridViewContainer .gridViewItem img {
+	width: 100%;
+}
+
+.gridViewItem .gridViewInfo {
+	font-weight: 300;
+	text-align: center;
+	padding: 5px 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	letter-spacing: 0.8px;
+}
+
+.albumInfo {
+	padding: 40px 0 10px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.albumInfo .leftSection {
+	width: 30%;
+	float: left;
+	max-width: 250px;
+}
+
+.albumInfo .leftSection img {
+	width: 100%;
+}
+
+.albumInfo .rightSection {
+	float: left;
+	width: 70%;
+	padding: 5px 10px 5px 40px;
+	box-sizing: border-box;
+}
+
+.albumInfo .rightSection h2 {
+	margin-top: 0px;
+}
+
+.albumInfo .rightSection p {
+	color: #939393;
+	font-weight: 200;
+}
+
+.tracklist {
+	padding: 0;
+}
+
+.tracklist .tracklistRow {
+	height: 40px;
+	padding: 15px 10px;
+	list-style: none;
+}
+
+.tracklistRow span {
+	color: #939393;
+	font-weight: 200;
+}
+
+.tracklistRow:hover {
+	background-color: #282828;
+}
+
+.trackCount {
+	width: 8%;
+   float: left;
+}
+
+.tracklistRow .trackCount img {
+	width: 20px;
+	visibility: hidden;
+	position: absolute;
+	cursor: pointer;
+}
+
+.tracklistRow:hover .trackCount img {
+	visibility: visible;
+}
+
+.tracklistRow:hover .trackCount span {
+	visibility: hidden;
+}
+
+.tracklistRow .trackInfo {
+	width: 75%;
+	float: left;
+}
+
+.tracklistRow .trackInfo span {
+	display: block;
+}
+
+.tracklistRow .trackOptions {
+	width: 5%;
+	float: left;
+	text-align: right;
+}
+
+.tracklistRow .trackOptions img {
+	width: 15px;
+	visibility: hidden;
+}
+
+.tracklistRow:hover .trackOptions img {
+	visibility: visible;
+}
+
+.tracklistRow .trackDuration {
+	width: 12%;
+	float: left;
+	text-align: right;
+}
+
+.tracklistRow .trackInfo .trackName {
+	color: #fff;
+	margin-bottom: 7px;
+}
 
