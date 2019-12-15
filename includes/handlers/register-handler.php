@@ -13,6 +13,13 @@ function sanitizeFormString($inputText) {
 	return $inputText;
 }
 
+function sanitizeFormEmail($input) {
+	$input = strip_tags($input);
+	$input = str_replace(" ", "", $input);
+
+	return $input;
+}
+
 function sanitizeFormPassword($inputText) {
 	$inputText = strip_tags($inputText);
 	return $inputText;
@@ -24,8 +31,8 @@ if(isset($_POST['registerButton'])) {
 	$username = sanitizeFormUsername($_POST['registerUsername']);
 	$firstName = sanitizeFormString($_POST['firstName']);
 	$lastName = sanitizeFormString($_POST['lastName']);
-	$email = sanitizeFormString($_POST['email']);
-	$email2 = sanitizeFormString($_POST['email2']);
+	$email = sanitizeFormEmail($_POST['email']);
+	$email2 = sanitizeFormEmail($_POST['email2']);
 	$password = sanitizeFormPassword($_POST['registerPassword']);	
 	$password2 = sanitizeFormPassword($_POST['registerPassword2']);	
 

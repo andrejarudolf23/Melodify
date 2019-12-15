@@ -9,6 +9,7 @@ html, body {
 * {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
+	letter-spacing: 1px;
 }
 
 body {
@@ -19,6 +20,54 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+[role="link"] {
+	cursor: pointer;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* Utility Classes */
+.entityInfo {
+	padding: 40px 0 10px 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.btn {
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border: 2px solid #fff;
+	border-radius: 500px;
+	padding: 15px;
+	min-width: 130px;
+}
+
+.btn-green {
+	background-color: #2ebd59;
+	border: #2ebd59;
+}
+
+.btn:focus,
+.btn-green:focus {
+	outline: none;
+}
+
+.borderBottom {
+	border-bottom: 1px solid #939393;
+	margin-bottom: 20px;
+}
+
+.noResults {
+	margin: 15px;
+	display: block;
 }
 
 /* Now Playing Bar */
@@ -79,6 +128,10 @@ a {
 
 .controlButton:hover {
 	cursor: pointer;
+}
+
+.controlButton:focus {
+	outline: none;
 }
 
 .progressTime {
@@ -196,7 +249,7 @@ a {
 
 .navItem {
 	padding: 10px 0;
-    font-size: 14px;
+    font-size: 15.5px;
     font-weight: 700;
     display: block;
     letter-spacing: 1px;
@@ -260,34 +313,34 @@ a {
 	letter-spacing: 0.8px;
 }
 
-.albumInfo {
+/* .entityInfo {
 	padding: 40px 0 10px 0;
 	display: inline-block;
 	width: 100%;
-}
+} */
 
-.albumInfo .leftSection {
+.entityInfo .leftSection {
 	width: 30%;
 	float: left;
 	max-width: 250px;
 }
 
-.albumInfo .leftSection img {
+.entityInfo .leftSection img {
 	width: 100%;
 }
 
-.albumInfo .rightSection {
+.entityInfo .rightSection {
 	float: left;
 	width: 70%;
 	padding: 5px 10px 5px 40px;
 	box-sizing: border-box;
 }
 
-.albumInfo .rightSection h2 {
+.entityInfo .rightSection h2 {
 	margin-top: 0px;
 }
 
-.albumInfo .rightSection p {
+.entityInfo .rightSection p {
 	color: #939393;
 	font-weight: 200;
 }
@@ -366,3 +419,133 @@ a {
 	margin-bottom: 7px;
 }
 
+.artistInfo {
+	text-align: center;
+}
+
+.tracklistContainer h2,
+.gridViewContainer h2,
+.artistsContainer h2 {
+	text-align: center;
+}
+
+.searchContainer {
+	background-color: #242424;
+	padding: 20px 28px;
+}
+
+.searchContainer h4 {
+	margin: 0;
+	font-weight: 300;
+}
+
+.searchContainer .searchInput {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 62px;
+	letter-spacing: 2px;
+}
+
+.searchResultRow {
+	padding: 15px 10px;
+}
+
+.searchResultRow:hover {
+	background-color: #282828;
+}
+
+.searchResultRow .artistName span {
+	color: #fff;
+}
+
+.playlistsContainer {
+	padding: 10px 0;
+}
+
+.buttonItems button {
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+.playlistImage {
+	border: 3px solid #282828;
+	padding: 10px;
+}
+
+.optionsMenu {
+	background: #282828;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    z-index: 100;
+    position: fixed;
+    display: none;
+}
+
+.optionsMenu .item {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	font-weight: 400;
+	color: rgba(147, 147, 147, 0.8);
+	cursor: pointer;
+	height: 40px;
+	background-color: #282828;
+	font-size: 14px;
+}
+
+.optionsMenu .item:hover {
+	color: #fff;
+	background: #333;
+	border-color: #333;
+}
+
+.optionsMenu select {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.userInfo h1 {
+	text-align: center;
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+.centerSection .userInfo {
+	margin-bottom: 100px;
+}
+
+.userDetails {
+	padding: 20px;
+}
+
+.userDetails .container h2 {
+	text-align: center;
+}
+
+.userDetails .container input[type="text"],
+.userDetails .container input[type="password"],
+.userDetails .container .btn {
+	display: block;
+	margin: 20px auto;
+}
+
+.userDetails .container input[type="text"],
+.userDetails .container input[type="password"]  {
+	width: 100%;
+	height: 50px;
+	background: #1f1f1f;
+	border: none;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 0 20px;
+}
+
+.userDetails .container .message {
+	color: #2ebd59;
+	font-weight: 300;
+}
